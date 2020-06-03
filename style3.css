@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: url(l3.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+form{
+    color: white;
+    width: 200px;
+    margin:200px auto ;
+    background: rgba(0, 128, 96, 0.678);
+
+}
+
+h1{
+    color:turquoise;
+    font-size: 300%;
+    float: left;
+    padding: 12px;
+    border-bottom: 2px solid whitesmoke; 
+    text-align: center; 
+}
+.n{
+    margin: 10px;
+    background:black;
+    border: 2px solid turquoise;
+    float: left;
+    text-align: center;
+    border-radius: 24px;
+    color: white;
+}
+
+.agree{
+    margin:20px auto;
+    color: turquoise;
+    font-size: 18px;
+    text-align: center;
+
+}
+.menu{
+    background: rgb(0,100,0);
+    text-align: center;
+    width: 100%;
+}
+ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    width: 100%;
+}
+li{
+    width: 300px;
+    margin: 7px;
+    padding: 7px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.active,li:hover{
+    background-color: turquoise;
+    border-radius: 2px;
+}
+.btn{
+    width: 80%;
+    background: none;
+    border: 2px solid turquoise;
+    border-radius: 24px;
+    color: white;
+    text-align: center;
+    margin: 0 auto 10px 10%;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: green
+}
+input.y{
+    margin: 10px;
+    background:none;
+    color: white;
+    text-align: center;
+
+
+}
+.p{
+margin: 10px;
+background:black;
+    border: 2px solid turquoise;
+    border-radius: 24px;
+    text-align: center;
+}
+#cp,#nm{
+    margin: 10px;
+    background: rgba(255, 0, 0, 0.678);
+    width: 60px;
+
+}
+
+
+
+
+

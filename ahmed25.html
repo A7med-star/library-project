@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+         function logr(){
+             var str=document.getElementById("pass").value;
+             var mon=document.getElementById("mn").value;
+             if(str[0].match(/[A-Z]/g) && str.match(/[0-9]/g) && !str.match(/[" "]/g) && str.match(/[^a-zA-Z\d]/g) && str.length == 8 && mon[0].match(/[0]/g) && mon.length == 11  && !mon.match(/[A-Z]/g) && !mon.match(/[a-z]/g) && !mon.match(/[" "]/g) && !mon.match(/[^a-zA-Z\d]/g))
+             return;
+             else if(!str[0].match(/[A-Z]/g)){
+                 alert("the first letter should be capital");
+             }
+             else if(!str.match(/[0-9]/g)){
+                 alert("the password must contain one number at least");
+             }
+             else if(str.match(/[" "]/g)){
+                alert("No spaces in password");
+          }
+          else if(str.length != 8){
+                 alert("the password length must be 8");
+             }
+             else if(!str.match(/[^a-zA-Z\d]/g)){
+                 alert("the password must contain special character");
+             }
+             else if(!mon[0].match(/[0]/g)){
+                 alert("the mobile number should begin with zero(0)");
+             }
+             else if(mon.length != 11){
+                 alert("the mobile number must be 11 numbers");
+             }
+             else if(mon.match(/[A-Z]/g)|| mon.match(/[" "]/g) || mon.match(/[a-z]/g) || mon.match(/[^a-zA-Z\d]/g)){
+                 alert("the mobile number must have numbers only");
+             }
+
+             
+        }
+        </script>
+<meta charest="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Home </title>
+<link rel="stylesheet" href="style3.css"/>
+</head>
+<body>
+<div class="menu">
+<ul>
+ <li class="active"><a href="ahmed25.html"> Home</a></li>
+ <li><a href="ahmed26.html"> Shakespeare </a></li>
+ <li><a href="ahmed27.html"> Eric Arthur</a></li>
+ <li><a href="ahmed28.html"> Paulo Coelho</a></li>
+ <li><a href="ahmed29.html">  Hugo</a></li>   
+</ul>  
+</div> 
+    <form action="welcome.html">
+        <h1>Sign in</h1>
+<input class="n" type="text" placeholder="First name" required>
+    <input class="n" type="text" placeholder="Last name" required>
+        <input class="n" type="email" placeholder="E-mail" required> 
+            <input class="n" type="password" placeholder="Password" id="pass" required>
+            <input type="text" class="n" placeholder="Mobile number" id="mn" required>
+                <input class="n" type="text" placeholder="Adress" required>
+               <input class="n" list="a" placeholder="Gender" required>
+               <datalist id="a">
+                   <option value="Male"></option>
+                   <option value="Female"></option> 
+                   </datalist>
+                    <input type="checkbox" id="b" class="y" required>
+                    <label for="b" class="agree">I accepted the rules</label>
+                    <input class="btn" type="submit"value="Login" onclick="logr()">
+                </form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url(l11.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+.vh{
+    max-width: 1200px;
+    font-size: 18px;
+    color: white;
+}
+.tre,th,td{
+border: 4px solid skyblue;
+color: white;
+margin-left: 240px;
+}
+th,td{
+    width: 200px;
+    text-align: center;
+}
+.menu{
+    background: rgb(0,100,0);
+    text-align: center;
+    font-size: 15px;
+}
+ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+li{
+    width: 300px;
+    margin: 7px;
+    padding: 7px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.active,li:hover{
+    background-color: turquoise;
+    border-radius: 2px;
+}
